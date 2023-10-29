@@ -27,6 +27,7 @@ void Heap::add(int age, string name){
 void Heap::print(){
     int age, name;
     for (int i=1; i<=n; i++){
+        // tie(age, name) = member_vector.at(i);
         cout<<get<0>(member_vector.at(i))<<" "<<get<1>(member_vector.at(i))<<"\n";
     }
 }
