@@ -1,37 +1,29 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <queue>
 #include <tuple>
+#include <vector>
 using namespace std;
 
-class Heap{
-private:
-    int n;
-    vector<tuple<int, string>> member_vector;
+class Compare {
 public:
-    Heap(){
-        n = 1;
-        member_vector.emplace_back(0, "");
+    bool operator()(tuple<int, int, string> t1, tuple<int, int, string> t2){
+        if (get<0>(t1) > get<0>(t2)){
+            return true;
+        }
+        else if (get<0>(t1) == get<0>(t2)){
+            if (get<1>(t1) > get<1>(t2)){
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else {
+            return false;
+        }
     }
-    void add(int age, string name);
-    void print();
 };
-
-void Heap::add(int age, string name){
-    int index;
-    while(1){
-        
-    }
-}
-
-void Heap::print(){
-    int age, name;
-    for (int i=1; i<=n; i++){
-        // tie(age, name) = member_vector.at(i);
-        cout<<get<0>(member_vector.at(i))<<" "<<get<1>(member_vector.at(i))<<"\n";
-    }
-}
-
 
 int main(void){
 
@@ -41,16 +33,23 @@ int main(void){
 
     int n;
     int age;
+    int count;
     string name;
-    Heap member_list;
+    priority_queue<tuple<int, int, string>, vector<tuple<int, int, string>>, Compare> members;
 
     cin>>n;
+    count = 0;
     for (int i=0; i<n; i++){
         cin>>age>>name;
-        member_list.add(age, name);
+        members.push(make_tuple(age, count, name));
+        count++;
     }
 
-    member_list.print();
+    while(!members.empty()){
+        tuple<int, int, string> member = members.top();
+        cout<<get<0>(member)<<' '<<get<2>(member)<<'\n';
+        members.pop();
+    }
 
     return 0;
 }
