@@ -8,8 +8,9 @@ using namespace std;
 
 int main(void) {
 
-    int n, num;
-    float avg;
+    double n;
+    int num;
+    double avg;
     int medium, count;
     int freq, max_count;
     int max, min;
@@ -53,8 +54,7 @@ int main(void) {
         }
     }
 
-    cout<<avg<<'\n';
-    cout<<round(avg/n)<<'\n';
+    cout<<(int)round(avg/n)<<'\n';
 
     cout<<medium<<'\n';
 
