@@ -57,7 +57,7 @@ int main(void) {
                     }
                 }
                 if (result > wrong) {
-                    cout<<"n : "<<i<<" m : "<<j<<" WB : "<<wb<<'\n';
+                    //cout<<"n : "<<i<<" m : "<<j<<" WB : "<<wb<<'\n';
                     result = wrong;
                 }
             }
