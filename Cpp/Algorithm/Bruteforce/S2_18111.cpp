@@ -45,7 +45,6 @@ int main(void) {
             if (copy_ground[j] >= i) {
                 time += 2*(copy_ground[j] - i);
                 block += (copy_ground[j] - i);
-                
             }
             else {
                 if (block >= (i - copy_ground[j])) {
@@ -58,7 +57,7 @@ int main(void) {
                 }
             }
         }
-        if (time >= 0 && time < ans_time) {
+        if (time >= 0 && time <= ans_time) {
             ans_time = time;
             ans_floor = i;
         }
