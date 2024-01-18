@@ -19,8 +19,6 @@ int main(void){
             n_fact %= 1000000;
         }
     }
-
     cout<<count;
-
     return 0;
 }
