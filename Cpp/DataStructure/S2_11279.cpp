@@ -23,7 +23,5 @@ int main(void) {
             max_heap.push(input);
         }
     }
-
-
     return 0;
 }
