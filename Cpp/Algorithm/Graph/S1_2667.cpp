@@ -60,6 +60,7 @@ int main(void) {
 
     sort(answer.begin(), answer.end());
 
+    cout<<buildings<<"\n";
     for (int i=0; i<answer.size(); i++) {
         cout<<answer[i]<<"\n";
     }
