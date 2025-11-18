@@ -2,6 +2,7 @@
     "files.associations": {
         "set": "cpp",
         "queue": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "tuple": "cpp"
     }
 }
