@@ -3,6 +3,7 @@
         "set": "cpp",
         "queue": "cpp",
         "iostream": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "unordered_set": "cpp"
     }
 }
