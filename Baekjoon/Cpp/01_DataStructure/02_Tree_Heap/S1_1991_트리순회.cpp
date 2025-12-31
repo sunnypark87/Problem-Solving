@@ -4,6 +4,7 @@
 using namespace std;
 
 // 트리는 visited가 필요하지 않음
+// 전위 순회, 중위 순회, 후위 순회는 출력 위치에 따라서 달라진다
 
 vector<vector<char>> tree(26, vector<char>(2, '.'));
 string preorder="", inorder="", postorder="";
