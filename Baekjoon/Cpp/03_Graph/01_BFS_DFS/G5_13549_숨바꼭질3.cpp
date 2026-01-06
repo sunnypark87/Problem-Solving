@@ -3,6 +3,7 @@
 #include <deque>
 using namespace std;
 
+// 0-1 BFS
 // 가중치가 2종류인 bfs의 경우에는 deque을 사용
 // 우선순위가 높은 것을 front에 낮은 것을 back에 넣어서 처리
 
