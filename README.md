@@ -1,7 +1,7 @@
 # 📘 Problem Solving Solutions
 
 알고리즘 문제 풀이 저장소입니다. 
-현재 백준 온라인 저지(BOJ)의 문제들로 구성되어 있으며 다른 사이트의 문제도 추가될 수 있습니다. 
+백준(BOJ)과 프로그래머스의 C++ 및 JavaScript 풀이를 보관합니다.
 C++를 주언어로 사용하며, **알고리즘 주제별**로 분류하여 관리하고 있습니다.
 
 ## 🏷️ Solved.ac Profile
@@ -12,7 +12,7 @@ C++를 주언어로 사용하며, **알고리즘 주제별**로 분류하여 관
 이 저장소는 **주제(Topic) > 세부 유형 > 난이도(Tier)** 순서로 구조화되어 있습니다.
 
 ```text
-Baekjoon
+Baekjoon/Cpp
 │
 ├── 01_DataStructure          # 자료구조
 │   ├── 01_Linear                # Stack, Queue, Deque, List
@@ -33,8 +33,9 @@ Baekjoon
 ├── 03_Graph                  # 그래프 이론
 │   ├── 01_BFS_DFS
 │   ├── 02_ShortestPath          # Dijkstra, Floyd-Warshall
-│   ├── 03_MST
-│   └── 04_TopologicalSort
+│   ├── 03_Tree
+│   ├── 04_MST
+│   └── 05_TopologicalSort
 │
 ├── 04_Math                   # 수학 
 │   ├── 01_NumberTheory          # 정수론 
@@ -72,6 +73,18 @@ Baekjoon
 - `G5_2504_괄호의값.cpp`
 - `S1_11286_절댓값힙.cpp`
 
+## 문제 맵
+
+| 사이트 / 언어 | 상세 분류 |
+| --- | --- |
+| Baekjoon / C++ | [문제 맵](./Baekjoon/Cpp/README.md) |
+| Programmers / C++ | [문제 맵](./Programmers/Cpp/README.md) |
+| Programmers / JavaScript | [문제 맵](./Programmers/Javascript/README.md) |
+
+프로그래머스 파일명은 `L<Level>_<Name>.<ext>`를 사용한다.
+
 ## 주요 개념 요약
 
-- 사전 순 탐색에서는 목표보다 큰 접두사를 가지치기하고, 공유 문자열은 추가·복원하며 탐색한다. [완전 탐색 노트](./Programmers/Cpp/02_Algorithm/01_Bruteforce_Backtracking/README.md)
+- 그래프: 같은 이동 비용의 최단거리는 BFS로 구하며, 큐에 넣기 전에 방문 표시한다. [상세 노트](./Programmers/Cpp/03_Graph/01_BFS_DFS/README.md)
+- 완전 탐색: 반복 패턴을 조회하거나 백트래킹으로 후보를 열거하며, 중복 선택과 선행 0을 가지치기한다. 공유하는 방문 상태는 재귀 호출 뒤 복원한다. 사전 순 탐색에서는 목표보다 큰 접두사를 가지치기할 수 있다. [상세 노트](./Programmers/Cpp/02_Algorithm/01_Bruteforce_Backtracking/README.md)
+- 트리 분할: 간선 하나를 제거한 뒤 한쪽 연결 요소 크기만 구하면 나머지는 전체에서 뺄 수 있다. [상세 노트](./Programmers/Cpp/03_Graph/01_BFS_DFS/README.md)

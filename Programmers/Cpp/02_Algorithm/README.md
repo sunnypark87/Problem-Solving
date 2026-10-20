@@ -1,11 +1,26 @@
 # Algorithm (알고리즘)
 
+핵심 알고리즘 — DP, 그리디, 이분 탐색, 분할 정복 등.
+
+## 📝 학습 노트
+
+> 이 디렉터리의 문제를 풀면서 얻은 인사이트가 누적됩니다.
+> 코드 리뷰 시 핵심 takeaway가 아래에 추가됩니다.
+
 ## 문제 맵
 
 | 분류 | 주요 내용 |
 | --- | --- |
-| [완전 탐색 / 백트래킹](./01_Bruteforce_Backtracking/README.md) | 접두사 DFS, 사전 순 가지치기 |
+| [완전 탐색 / 백트래킹](./01_Bruteforce_Backtracking/README.md) | 패턴 비교, 선택지 열거, DFS |
+| [정렬](./02_Sort/README.md) | 정렬 기준과 순서 |
+| [이분 탐색](./03_BinarySearch/README.md) | 탐색 범위 축소 |
+| [분할 정복](./04_Divide_Conquer/README.md) | 부분 문제 분할과 결합 |
+| [투 포인터 / 슬라이딩 윈도우](./05_TwoPointer_SlidingWindow/README.md) | 구간 탐색 |
+| [그리디](./06_Greedy/README.md) | 현재 선택의 정당성 |
+| [DP](./07_DP/README.md) | 상태와 점화식 |
+| [누적 합](./08_PrefixSum/README.md) | 구간 합 |
+| [기타](./ETC/README.md) | 그 밖의 알고리즘 |
 
 ## 주요 개념 요약
 
-- 문자열 접두사는 추가·복원하며 탐색할 수 있고, 목표보다 큰 접두사는 확장을 생략한다. [상세 노트](./01_Bruteforce_Backtracking/README.md)
+- 완전 탐색은 필요한 후보를 빠짐없이 확인한다. 반복 패턴은 나머지 연산으로 조회하고, 선택지가 갈라지면 DFS로 열거한다. 중복 숫자는 선택 순서를 고정하고, 매 선택의 접두사를 검사하면 모든 길이를 한 번에 탐색할 수 있다. 방문 배열을 참조로 공유하는 백트래킹에서는 선택 뒤 상태 복원이 필요하다. 문자열 접두사도 추가·복원하며 탐색할 수 있고, 목표보다 큰 접두사는 확장을 생략한다. [상세 노트](./01_Bruteforce_Backtracking/README.md)
