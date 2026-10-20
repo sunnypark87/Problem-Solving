@@ -71,3 +71,7 @@ Baekjoon
 **예시:**
 - `G5_2504_괄호의값.cpp`
 - `S1_11286_절댓값힙.cpp`
+
+## 주요 개념 요약
+
+- 사전 순 탐색에서는 목표보다 큰 접두사를 가지치기하고, 공유 문자열은 추가·복원하며 탐색한다. [완전 탐색 노트](./Programmers/Cpp/02_Algorithm/01_Bruteforce_Backtracking/README.md)
