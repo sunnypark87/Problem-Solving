@@ -26,3 +26,5 @@ C++로 푼 문제 모음.
 - BFS의 방문 처리와 동일 비용 최단거리는 [그래프 노트](./03_Graph/01_BFS_DFS/README.md)를 참고한다.
 - 완전 탐색의 주기 인덱싱·동점 처리·중복 순열 가지치기·방문 상태 복원·사전 순 접두사 탐색은 [알고리즘 노트](./02_Algorithm/01_Bruteforce_Backtracking/README.md)를 참고한다.
 - 트리의 간선 제거 후 연결 요소 크기와 인접 리스트 탐색은 [BFS / DFS 노트](./03_Graph/01_BFS_DFS/README.md)를 참고한다.
+
+- DP의 상태 정의·경계 처리와 값 전달의 복사 공간은 [DP 노트](./02_Algorithm/07_DP/README.md)를 참고한다.

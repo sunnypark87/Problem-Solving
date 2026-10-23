@@ -88,3 +88,5 @@ Baekjoon/Cpp
 - 그래프: 같은 이동 비용의 최단거리는 BFS로 구하며, 큐에 넣기 전에 방문 표시한다. [상세 노트](./Programmers/Cpp/03_Graph/01_BFS_DFS/README.md)
 - 완전 탐색: 반복 패턴을 조회하거나 백트래킹으로 후보를 열거하며, 중복 선택과 선행 0을 가지치기한다. 공유하는 방문 상태는 재귀 호출 뒤 복원한다. 사전 순 탐색에서는 목표보다 큰 접두사를 가지치기할 수 있다. [상세 노트](./Programmers/Cpp/02_Algorithm/01_Bruteforce_Backtracking/README.md)
 - 트리 분할: 간선 하나를 제거한 뒤 한쪽 연결 요소 크기만 구하면 나머지는 전체에서 뺄 수 있다. [상세 노트](./Programmers/Cpp/03_Graph/01_BFS_DFS/README.md)
+
+- DP: 상태에 최적값을 저장하고 의존하는 상태가 계산된 순서로 갱신한다. [상세 노트](./Programmers/Cpp/02_Algorithm/07_DP/README.md)
